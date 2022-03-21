@@ -38,12 +38,12 @@ excerpt_separator: <!-- more -->
 footer-links:
   #weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<username>
-  dribbble:
-  zhihu: ning-meng-cheng-31-94
-  email: lemonchann@foxmail.com
-  facebook:
-  flickr:
-  github: lemonchann 
+  dribbble: 
+  zhihu: ##
+  email: trueway813@gmail.com
+  facebook: 
+  flickr: 
+  github: ##
   googleplus: # anything in your profile username that comes after plus.google.com/
   instagram:
   linkedin:
@@ -52,7 +52,7 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   tumblr: # https://<username>.tumblr.com
   #twitter: frommidworld
-  youtube:
+  youtube: 
 
 # Text under the icons in footer
 footer-text: Copyright (c) 2022 Chu
@@ -63,10 +63,10 @@ disqus: # fromendworld
 
 # Gitalk
 gitalk:
-  clientID: bd65d5c0df878155b7fa
-  clientSecret: d0220762c05c2d6b6f6152a0f0e4b6b090de9729
-  repo: lemonchann.github.io
-  owner: lemonchann
+  clientID: #
+  clientSecret: #
+  repo: #
+  owner: #
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 #google_analytics: 
