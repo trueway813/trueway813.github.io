@@ -65,8 +65,8 @@ disqus: # fromendworld
 gitalk:
   clientID: 5fc413940cf839ed9b7c
   clientSecret: de975edfc413ff5f748ecfaaf5a8c3eccfcf3fd0
-  repo: trueway813
-  owner: Chu
+  repo: trueway813.github.io
+  owner: trueway813
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 #google_analytics: 
