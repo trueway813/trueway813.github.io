@@ -13,15 +13,36 @@ HTML(Hyper Text Mark-up Language超文本标记语言)：不是编程语言，�
 
 # HTML的文档结构
 ```
-<html> 
-      <head>
-           <title>
-                标题
-           </title>
-      </head>
-      <body>
-           正文
-      </body>
+<!doctype html>
+<html>
+    <head>
+        <!-- 声明当前页面的编码集：charset=gbk,gb2312(中文编码) , utf-8(国际编码) -->
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <!-- 声明当前页面的三元素 -->
+        <title>helloWorld--zxk</title>
+        <meta name='keywords' content='关键词,关键词'>
+        <meta name='description' content=''>
+        <!-- js/css -->
+		<link rel="stylesheet" type="text/css" href="asset/all.less" />
+		<script src="common/css/less-1.3.3.min.js"></script>
+            
+		<style type="text/css">
+			/* 重置浏览器默认样式 */
+			body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td {
+			    margin: 0;
+			    padding: 0;
+			}
+
+			img {
+			    border: 0;
+			    vertical-align: top;
+			}
+		</style>
+            
+    </head>
+ <body>
+精于勤<br />荒于嬉
+ </body>
 </html>
 ```
 > 小结：
@@ -34,6 +55,9 @@ HTML(Hyper Text Mark-up Language超文本标记语言)：不是编程语言，�
 
 # 常见的HTML的标记语法
 
+1.常见的单标记(由一个标签组成的)
+- 例如 `<br>、<hr>、<img>、<input>、<param>、<meta>、<link>`
+
 1.1 单标记(单一型，无属性值)
 - `<标记名称>`
 - 如：`<br>` —— 表示换行符
@@ -41,6 +65,9 @@ HTML(Hyper Text Mark-up Language超文本标记语言)：不是编程语言，�
 1.2 单标记(单一型，有属性值)
 - `<标记名称属性=”属性值”>`
 - 如：`<hr width=”80%”/>`
+
+2.常见的双标记（由“开始标签”和“结束标签”两部分构成）
+- 例如 `<html>、<head>、<title>、<body>、<table>、<tr>、<td>、<span>、<p>、<form>、<h1>、<h2>、<h3>、<h4>、<h5>、<h6>、<object>、<style>、<b>、<u>、<strong>、<i>、<div>、<a>、<script>、<center>（双标签的一部分）`
 
 2.1 双标记(没有属性值)
 - `<标记名称>…</标记名称>`
@@ -99,7 +126,7 @@ align|Right|右对齐
 
 # 修饰标记
 
-## 水平直线 `<hr>`
+## 水平直线 `<hr/>`
 
 属性名称|属性值|说明
 :--:|:--:|:--:
