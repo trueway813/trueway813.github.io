@@ -82,7 +82,7 @@ HTML(Hyper Text Mark-up Language超文本标记语言)：不是编程语言，�
 - `<!—注释内容-->`
   
 # Body属性
-` <body bgcolor=”背景颜色” background=”背景图像” text=”文本颜色” link=”链接文本颜色” vlink=”访问过的文本颜色” alink=”激活的连接文本颜色” leftmargin=”左边界”> `
+`<body bgcolor=”背景颜色” background=”背景图像” text=”文本颜色” link=”链接文本颜色” vlink=”访问过的文本颜色” alink=”激活的连接文本颜色” leftmargin=”左边界”>`
 
 # `<font>`标记
 - 语法：
