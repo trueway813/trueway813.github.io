@@ -15,26 +15,22 @@
                 width: 100%; 
                 margin: 0 auto; 
                 overflow: auto; 
-                font-family: KaiTi;               
+                font-family: KaiTi;           
 			}
             .title{    
-                /* 边框 */
-                border-style: solid;
-                border-width: 3px; 
-                border-radius: 10px;
-                border-color: rgb(161, 114, 114);
-                /* 外边距    */
-                margin-top:10px;
-                margin-bottom:10px;
-                margin-right: 25%;
-                margin-left: 25%; 
-                /* 字体 */
-                font-weight: bolder;
-                font-size: xx-large;
-                color: rgb(161, 114, 114);
-                font-family: KaiTi;                
+                display: inline-block;
+                position: relative;
+                color: #fff;
+                font-weight: 900;
+                font-size: 40px;
+                padding: 10px 30px;
+                text-align: center;
+                border: none;
+                clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
+                background-color: #acc4d4;              
             }
             .explain{
+                padding: 6px 30px 0px 30px;
                 font-size: large;
                 font-weight:900;
                 color: rgb(50, 50, 95);
@@ -134,7 +130,7 @@
         <div class="title">京东挂机系统</div>
         <div class="explain">解题思路<br>1.首先获取CK<br>2.然后提交CK</div>
     </div>    
-    <hr>
+    <hr style="width: 400px;">
     <div class="get-wrap">
         <div class="get-content">
         <div>     ①【通过工具获取到CK】    
