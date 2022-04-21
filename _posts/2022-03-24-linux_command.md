@@ -2,12 +2,12 @@
 layout: post
 title: "Linux命令总结"
 date:   2022-03-24
-tags: [Markdown]
+tags: [Learning]
 comments: true
 author: Chu
 ---
 
-Linux命令总结
+Linux常用命令总结
 
 <!-- more -->
 

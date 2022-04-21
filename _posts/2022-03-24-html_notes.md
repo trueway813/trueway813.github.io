@@ -2,13 +2,13 @@
 layout: post
 title: "HTML_NOTES"
 date:   2022-03-24
-tags: [HTML]
+tags: [Learning]
 comments: true
 author: Chu
 
 ---
 
-HTML(Hyper Text Mark-up Language超文本标记语言)：不是编程语言，而是一种描述性的标记语言，用于描述网页中内容的显示方式，比如文字以什么颜色、大小来显示等，这些都是利用Html标记来实现。
+HTML常用
 <!-- more -->
 
 
