@@ -19,6 +19,18 @@ HTML(Hyper Text Mark-up Language超文本标记语言)：不是编程语言，�
 > - `maximum-scale=1.0` 表示最大的缩放比例
 > - `user-scalable=no`	表示用户是否可以调整缩放比例，值为”no”或”yes”
 
+## 图片自适应
+
+```css
+img{
+            background-size: contain|cover;
+            height: auto;
+            width: 100%
+            }
+```
+
+
+
 ## 按钮相关
 ### onclick事件
 ```
