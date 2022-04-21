@@ -1,4 +1,16 @@
-# Linux命令总结
+---
+layout: post
+title: "Linux命令总结"
+date:   2022-03-21
+tags: [Markdown]
+comments: true
+author: Chu
+---
+
+Linux命令总结
+
+<!-- more -->
+
 
 ---
 ## 端口相关
