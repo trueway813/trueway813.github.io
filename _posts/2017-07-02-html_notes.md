@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HTML_NOTES"
-date:   2022-03-24
+date:   2017-07-02
 tags: [Learning]
 comments: true
 author: Chu

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HTML基本语法"
-date:   2022-03-21
+date:   2017-07-01
 tags: [HTML]
 comments: true
 author: Chu
@@ -89,7 +89,7 @@ HTML(Hyper Text Mark-up Language超文本标记语言)：不是编程语言，�
 - `<font color=”文本颜色” size=“字号”>文本</font>`
   
 # 字符格式
-  
+
 |功能|标记|
 |:--:|:--:|
 |加粗    |`<b>文本</b>`|
@@ -100,7 +100,7 @@ HTML(Hyper Text Mark-up Language超文本标记语言)：不是编程语言，�
 |上标|`<sup>文本</sup>`|
 |下标|`<sub>文本<sub>`|
 
-  
+
 # 段落标记
 - 格式：
 - `<p align=“对齐方式”>…</p>`
@@ -122,7 +122,7 @@ align|Right|右对齐
 `&`|`&amp;`
 `<`|`&it;`
 `>`|`&gt;`
- 
+
 
 # 修饰标记
 
@@ -133,6 +133,6 @@ align|Right|右对齐
 Size|像素绝对值|越大，线越粗
 Width|宽度|随着值得变化
 
- 
+
 # 总结：
 ## 以上就是我们在学习html中经常用到的语法
