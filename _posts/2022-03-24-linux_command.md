@@ -14,20 +14,32 @@ Linux常用命令总结
 
 ---
 ## 端口相关
-- 用于显示 tcp，udp 的端口和进程等相关情况。
->netstat -tunlp
 
-- 查看当前所有tcp端口
->netstat -ntlp   
+- **`ps aux |grep 进程名`**
 
-- 查看80端口占用情况
->fuser -n tcp 80
+  > 如：`ps aux |grep sillyGirl`
+  >
+  > ps是显示当前状态处于running的进程，grep表示在这些里搜索，而ps aux是显示所有进程和其状态
 
-- 查看所有80端口使用情况
->netstat -ntulp | grep 80   
+- **`netstat -tunlp`**
 
-- 查看所有3306端口使用情况
->netstat -ntulp | grep 3306  
+  > 用于显示 tcp，udp 的端口和进程等相关情况。
+
+- **`netstat -ntlp`**   
+
+  > 查看当前所有tcp端口
+
+- **`fuser -n tcp 80`**
+
+  > 查看80端口占用情况
+
+- **`netstat -ntulp | grep 80`**
+
+  > 查看所有80端口使用情况  
+
+- **`netstat -ntulp | grep 3306`**
+
+  > 查看所有3306端口使用情况 
 
 ---
 
@@ -40,13 +52,13 @@ Linux常用命令总结
 
   > `cat /etc/os-release`
 
-&nbsp;
+
 
 - **`yum` 命令**
 
   1.YUM全称为 Yellow dog Updater Modified，它是一个在线的软件安装命令。
 
-&nbsp;
+
 
 - **`tar` 命令**
 
@@ -63,3 +75,13 @@ Linux常用命令总结
   > > f ：指定被处理的文件是什么 ：适用于参数分开使用的情况，连续无分隔参数不应该再使用（所以上面的命令不标准） 
   > >
   > > 由此分析，v 是可以省去的（v属于辅助参数） 直接用 zxf 即可， 上面命令默认解压到当前目录，如果我们想要直接解压到指定目录并切换过去
+
+
+
+- **`nohup`命令**
+
+  1.`nohup`：放在命令的开头，表示不挂起（no hang up），也即，关闭终端或者退出某个账号，进程也继续保持运行状态，一般配合&符号一起使用。如`nohup command &`
+
+  1.语法：`nohup Command [ Arg … ] [　& ]`
+
+  > `&` 用途：在后台运行
