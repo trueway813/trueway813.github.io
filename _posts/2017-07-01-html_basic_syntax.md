@@ -136,3 +136,27 @@ Width|宽度|随着值得变化
 
 # 总结：
 ## 以上就是我们在学习html中经常用到的语法
+
+
+
+
+
+## jQuery 语法
+
+jQuery 语法是通过选取 HTML 元素，并对选取的元素执行某些操作。
+
+基础语法： **$(\*selector\*).\*action\*()**
+
+- 美元符号定义 jQuery
+- 选择符（selector）"查询"和"查找" HTML 元素
+- jQuery 的 action() 执行对元素的操作
+
+实例:
+
+`$(this).hide() `- 隐藏当前元素
+
+`$("p").hide()` - 隐藏所有段落
+
+`$("p .test").hide()` - 隐藏所有 class="test" 的段落
+
+`$("#test").hide()` - 隐藏所有 id="test" 的元素
