@@ -1,4 +1,18 @@
-# 爱奇艺国际版解析
+---
+layout: post
+title: "AQY解析"
+date:   2022-04-21
+tags: [Midea]
+comments: true
+author: Chu
+
+---
+
+AQY解析
+
+<!-- more -->
+
+# 记一次AQY视频解析
 
 ## 一、思路
 
@@ -8,10 +22,8 @@
 ## 二、工具
 
 - Chrome浏览器
-
-- Chrome浏览器拓展--猫抓 （m3u8工具）https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb/related?hl=zh-CN
-
-- m3u8地址下载为mp4工具 https://github.com/nilaoda/N_m3u8DL-CLI/releases/download/2.9.9/N_m3u8DL-CLI_v2.9.9_with_ffmpeg_and_SimpleG.zip
+- Chrome浏览器拓展--猫抓 （m3u8工具）[地址](https://chrome.google.com/webstore/detail/%E7%8C%AB%E6%8A%93/jfedfbgedapdagkghmgibemcoggfppbb/related?hl=zh-CN)
+- m3u8地址下载为mp4工具  [地址](https://github.com/nilaoda/N_m3u8DL-CLI/releases/download/2.9.9/N_m3u8DL-CLI_v2.9.9_with_ffmpeg_and_SimpleG.zip)
 
 ## 三、流程
 
