@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>识别对联上下联</title>
+  <script src="https://fastly.jsdelivr.net/npm/cnchar/cnchar.min.js"></script>
+  <script src="https://fastly.jsdelivr.net/npm/cnchar-poly/cnchar.poly.min.js"></script>
+<script>
+  function couplet(){
+      var text = document.getElementById("txt1").value; 
+	  var except_chars = ": ‘ ! @ # % … & * (  ^  &  ￥  , . ，。;；:；)$";
+	  text = text.replace(except_chars,"");
+	  var len = text.length;
+	  var txt1 = "";
+	  var txt2 = "";
+      if(cnchar.isCnChar(text) && len>1 && len % 2==0)
+	  {
+		   txt1 = text.substring(0,len/2);
+		   txt2 = text.substring(len/2);
+		   var hanzi = txt1.substring(len/2-1);
+		   //alert("1 :"+txt1);
+		   //alert("2 :"+txt2);
+		   //alert("hanzi :"+hanzi);
+		   // 先查询汉字拼音再获取声调返回一个数值
+		   var sd = cnchar.spellInfo((hanzi.spell('tone'))).tone; 
+		   if(sd == 3 || sd ==4)
+		   {
+			   document.getElementById("pright").innerHTML=txt1;
+			   document.getElementById("pleft").innerHTML=txt2;
+		   }
+		   else
+		   {
+               document.getElementById("pright").innerHTML=txt2;
+			   document.getElementById("pleft").innerHTML=txt1;
+		   }
+	  }
+	  else
+	  {
+	       alert("你输入的对联有误，请重新输入后再试！");
+		   return;
+	  }
+  }
+</script>
+ </head>
+ <body>
+   <div class="parent" align = "center" style="margin-top:30px;clear:both;">
+	   <div class ="left" >
+	      <p style="writing-mode:tb-rl" id ="pleft"></p>
+	   </div>
+	   <div class ="mid">
+	      <p align="left">
+		  <font color="gray" size="3px" style="margin-left:25px;">请输入你要识别的对联(不要输入符号):</font></p>
+	      <textarea class="txt1" id="txt1"></textarea></br>
+		  <input class="buttoncss" type="button" value="确定(ok)" onclick="couplet()">
+		  <div align="left" style="margin-top:10px;margin-left:30px;font-size:15px;">
+			  <p>1.张贴方法区分，上联在右侧，下联在左侧;</p>
+			  <p>2.区分上下联的方式是通过最后一个字的声调;</p>
+			  <p>上联的最后一个字是三声或者四声；一二声下联;</p>
+			  <p>3.含义方法区分，普遍把含义深刻的放在下联;</p>
+			  <p>时间关系区分，旧时在前是上联,新时在后是下联;</p>
+			  <p>范围大小区分：范围小的是上联,范围大的是下联;</p>
+			  <p>4.贴春联的时间应该是除夕早上6-12点之间;</p>
+			  <p>5.贴春联讲究单数，可以贴福字、招财进宝等;</p>
+			  <p>6.福字不可随意贴，不是都要倒着贴，大门上的</p>
+			  <p>福字要正贴，衣柜等小门则可以倒着贴。</p>
+		  </div>
+	   </div>
+	   <div class ="right">
+	      <p style="writing-mode:tb-rl" id ="pright"></p>
+	   </div>
+   </div>
+ </body>
+</html>
+<style type="text/css">
+*{
+    margin:0;
+	padding:0;
+}
+.left {
+      display: inline-block;
+      width: 60px;
+	  height:420px;
+      background-color: red;
+	  border-color:yellow;
+	  font-size:45px;
+	  text-align:center;
+	  border-style:solid;
+	  border-width:3px 7px 3px 7px; 
+	  font-weight:bolder;
+}
+.right {
+      display: inline-block;
+      width: 60px;
+	  height:420px ;
+      background-color: red;
+	  border-color:yellow;
+	  font-size:45px;
+	  text-align:center;
+	  border-style:solid;
+	  border-width:3px 7px 3px 7px; 
+	  font-weight:bolder;
+}
+.mid {
+      display: inline-block;
+	  width: calc(400px);
+	  height:auto ;
+}
+TextArea {
+   height:calc(4em*1.38);
+   width: calc(350px);
+   font-size:25px;
+   line-htight:1.38;
+   resize:none;
+   margin-top:5px;
+}
+.buttoncss {
+     font-family: "tahoma", "宋体"; 
+     font-size:20pt; color: #003399;
+     border: 1px #003399 solid;
+     color:#006699;
+     border-bottom: #93bee2 1px solid;
+     border-left: #93bee2 1px solid;
+     border-right: #93bee2 1px solid;
+     border-top: #93bee2 1px solid;
+     background-color: #e8f4ff;
+     cursor: hand;
+     font-style: normal ;
+     margin-top:10px;
+     width:150px;
+	 text-align:center;
+}
+</style>
